@@ -1,9 +1,15 @@
-var a = 1;
+class SDK {
+  constructor() {
+    this.developer = 'yingxu.wang';
+  }
 
-if (a === 1) {
-  a = 2;
-} else {
-  a = 3;
+  requestDeveloper() {
+    return this.developer;
+  }
 }
 
-const b = () => { console.log('箭头') };
+const sdk = new SDK();
+
+const result = sdk.requestDeveloper();
+
+console.log(result);

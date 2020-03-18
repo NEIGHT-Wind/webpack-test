@@ -6,6 +6,24 @@
   <title>webpack-test</title>
 </head>
 <body>
+
   <script src="./dist/index.js"></script>
+
+  <script>
+    // 课后题
+    class Question {
+      a = 1;
+
+      questionConsole = () => {
+        console.log(`why 'this' is instance ? this: `, this);
+        console.log('why not class Question ?');
+      }
+    };
+
+    const instance = new Question();
+
+    instance.questionConsole();
+
+  </script>
 </body>
 </html>
